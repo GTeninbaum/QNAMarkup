@@ -1,0 +1,51 @@
+Before:<h2>Massachusetts PIP Tool<sup>†</sup></h2><p>This tool determines if a client is (1) eligible for no-fault auto insurance benefits under Mass. law and, if so, (2) which insurer pays (if more than one is involved), and (3) for how much money that insurer is primary.
+</p>
+After:<sup>†</sup><b>Send comments/corrections to:</b><br><a href="mailto:gteninbaum@suffolk.edu">Prof. Gabe Teninbaum</a> (Suffolk Law)<br><a href="mailto:cthompson@toddweld.com">Atty. Christine Thompson</a> (Todd & Weld)<br><br>
+Q(1): Was the client in an accident involving a motor vehicle within the past 2 years?
+A:Yes.
+	Q(1.1):GOTO:2
+A: No.
+	Q(1.2):GOTO:7
+Q(2): Did the client suffer personal injuries, and/or lost wages and/or require replacement services as a result of the accident?
+A:Yes.
+	Q(2.1):GOTO:3
+A:No.
+	Q(2.2):If the client didn't suffer one of these losses (and don't anticipate incurring them), there's no reason to file a PIP application.
+Q(3): At the time of the accident, was the client:
+A:driving
+	Q(3.1):GOTO:5
+A:a passenger
+	Q(3.2):GOTO:5
+A:a pedestrian
+	Q(3.3):GOTO:4
+A:a bicyclist
+	Q(3.4):GOTO:4
+Q(4):Did the client contribute to causing your injury by any of the following:
+A:being under the influence of alcohol or drugs
+	Q(4.1):GOTO:7
+A:committing a felony or trying to avoid arrest
+	Q(4.2):GOTO:7
+A:trying to hurt him/herself or others
+	Q(4.3):GOTO:7
+A:No - none of the above
+	Q(4.4):GOTO:6
+Q(5): Was the client's vehicle a motorcycle, moped or motorized bicycle?
+A:Yes.
+	Q(5.1):GOTO:7
+A:No.
+	Q(5.2):GOTO:4
+Q(6):It sounds like the client has met the basic requirements. Next, we'll have to determine if there is a Mass. auto insurance policy available to pay the PIP benefits.GOTO:8
+Q(7):It appears the client is not eligible for coverage.
+Q(8):Which of these scenarios best describe the situation:
+A:At the time of the accident, the client was in a vehicle covered by the Massachusetts Compulsory Insurance policy.
+	Q(8.1):PIP benefits will be paid by the client's own insurance company.GOTO:9
+A:The client was in a car that was not covered by a Massachusetts Compulsory Insurance policy, but the client, or someone living in the client's household has a car that <b>is</b> covered under the Massachusetts Compulsory Insurance policy.
+	Q(8.2):The client's PIP benefits will be paid by the insurance company that insures the client's car (or that of the client's household member).GOTO:9
+A:The client was a pedestrian or bicyclist hit by a car that has a Massachusetts Compulsory Insurance policy.
+	Q(8.3):The client's PIP benefits will be paid by the insurer of the driver that hit the client.GOTO:9
+Q(9): Finally, it must be determined how much money PIP will be primary for.<br><br>Does the client have private health insurance?
+A:Yes.
+	Q(9.1):PIP will be the primary payer for the first $2,000, then will be secondary for up to an additional $6,000.GOTO:10
+A:No.
+	Q(9.2):PIP will be the primary payer for $8,000.GOTO:10
+Q(10): Thank you for using the Massachusetts PIP Eligibility Tool.
