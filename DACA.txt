@@ -1,0 +1,48 @@
+Title:DACA Eligibility Tool<br>Beta Version*
+
+
+Before: The DACA Eligibility Tool is a service of Suffolk University Law School's Institute on Law Practice Technology & Innovation and Immigration Law Clinic (will add hyperlinks). <br><br>It is intended to help people learn if they meet the criteria to apply for Deferred Action for Childhood Arrivals (often called "DACA").<br><br>DACA allows undocumented young people who meet the critiera to obtain a work permit and relief from deportation for a renewable two years at a time.  
+<br><br>This tool is updated to include recent expansion of the DACA program and is updated to reflect the law as of XXXXXX date.
+
+After: Please send comments/feedback to Gabe Teninbaum or Virginia Benzan (will include link to email)
+
+
+
+Q(1):Were under the age of 31 as of June 15, 2012?
+A:Yes.
+	Q(1.1):GOTO:2
+A:No.
+	Q(1.2):GOTO:9
+Q(2):Did you came to the U.S. before your 16th birthday?
+A:Yes.
+	Q(2.1):GOTO:3
+A:No.
+	Q(2.2):GOTO:9
+
+Q(3):Have you continuously resided* in the U.S. since June 15, 2007 (or earlier) to the present?<br><br>*Whether a person has "continuously resided" in the U.S. may require a legal analysis that should be performed by an attorney.  If you have any question as to if you "continuously resided" in the U.S., you should consult with an attorney.  
+A:Yes.
+	Q(3.1):GOTO:4
+A:No.
+	Q(3.2):GOTO:9
+Q(4):Were physically present in the U.S. on June 15, 2012, and at the time of making your request for consideration of deferred action with USCIS?
+A:Yes.
+	Q(4.1):GOTO:5
+A:No.
+	Q(4.2):GOTO:9
+Q(5):Did you have no lawful status on June 15, 2012?
+A:Yes.
+	Q(5.1):GOTO:6
+A:No.
+	Q(5.2):GOTO:9
+Q(6):Are currently: <br>-in school, or<br>-have graduated from high school,<br>-or have obtained a general education development (GED) certificate, or <br>-are an honorably discharged veteran of the Coast Guard or Armed Forces of the U.S.?
+A:Yes.
+	Q(6.1):GOTO:7
+A:No.
+	Q(6.2):GOTO:9
+Q(7):Have you been convicted of a crime or participated in any activities or organizations that could be said to pose a threat to national security or public safety (for example, been a member of a street gang or given money to an organization deemed a terrorist organization by the U.S. government).
+A:Yes.  
+	Q(7.1):While it sounds like you are otherwise likely eligible to apply for DACA, depending on your criminal history and/or behavior you've engaged in, you may not be eligible to apply for DACA.  Consult with a licensed attorney for advice.
+A:No.
+	Q(7.2):GOTO:8
+Q(8):It sounds like you may be eligible to apply for DACA.  Consulting with a licensed attorney will help you to confirm this prediction and also help you to decide if applying for consideration under DACA is the best option for you.  
+Q(9):It sounds like you may not be eligible to apply for DACA. Before making any decisions, though, you consult with a licensed attorney.
